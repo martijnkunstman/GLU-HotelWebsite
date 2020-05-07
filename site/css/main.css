@@ -98,6 +98,51 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+#container {
+  background: red;
+  width: 1280px;
+  margin:0 auto;  
+}
+#header {
+  background: blue;
+  height: 117px; 
+  width: 998px;
+  margin:0 auto; 
+}
+#headerTop {
+  background: yellow;
+  height: 57px; 
+  width: 998px;
+  margin:0 auto; 
+}
+#headerBottom {
+  background: #ff4400;
+  height: 60px; 
+  width: 998px;
+  margin:0 auto; 
+}
+
+#startPhoto{
+  background: #ffaaaa;
+  height: 551px; 
+  width: 1280px;
+  margin:0 auto; 
+  background-image: url("../img/background.png");
+  background-size: cover;
+  background-position: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
