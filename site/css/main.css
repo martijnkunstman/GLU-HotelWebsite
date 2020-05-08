@@ -98,35 +98,48 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+body {
+  background-image: url("../img/travel_booking_design.jpg");
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+div {
+  opacity: 0.5;
+}
+
 #container {
   background: red;
   width: 1280px;
-  margin:0 auto;  
-}
-#header {
-  background: blue;
-  height: 117px; 
-  width: 998px;
-  margin:0 auto; 
-}
-#headerTop {
-  background: yellow;
-  height: 57px; 
-  width: 998px;
-  margin:0 auto; 
-}
-#headerBottom {
-  background: #ff4400;
-  height: 60px; 
-  width: 998px;
-  margin:0 auto; 
+  margin: 0 auto;
 }
 
-#startPhoto{
+#header {
+  background: blue;
+  height: 117px;
+  width: 998px;
+  margin: 0 auto;
+}
+
+#headerTop {
+  background: yellow;
+  height: 57px;
+  width: 998px;
+  margin: 0 auto;
+}
+
+#headerBottom {
+  background: #ff4400;
+  height: 60px;
+  width: 998px;
+  margin: 0 auto;
+}
+
+#startPhoto {
   background: #ffaaaa;
-  height: 551px; 
+  height: 551px;
   width: 1280px;
-  margin:0 auto; 
+  margin: 0 auto;
   background-image: url("../img/background.png");
   background-size: cover;
   background-position: center;
@@ -237,9 +250,9 @@ textarea {
 }
 
 @media print,
-  (-webkit-min-device-pixel-ratio: 1.25),
-  (min-resolution: 1.25dppx),
-  (min-resolution: 120dpi) {
+(-webkit-min-device-pixel-ratio: 1.25),
+(min-resolution: 1.25dppx),
+(min-resolution: 120dpi) {
   /* Style adjustments for high resolution devices */
 }
 
@@ -250,6 +263,7 @@ textarea {
    ========================================================================== */
 
 @media print {
+
   *,
   *:before,
   *:after {
@@ -259,16 +273,20 @@ textarea {
     box-shadow: none !important;
     text-shadow: none !important;
   }
+
   a,
   a:visited {
     text-decoration: underline;
   }
+
   a[href]:after {
-    content: " (" attr(href) ")";
+    content: " ("attr(href) ")";
   }
+
   abbr[title]:after {
-    content: " (" attr(title) ")";
+    content: " ("attr(title) ")";
   }
+
   /*
      * Don't show links that are fragment identifiers,
      * or use the `javascript:` pseudo protocol
@@ -277,14 +295,17 @@ textarea {
   a[href^="javascript:"]:after {
     content: "";
   }
+
   pre {
     white-space: pre-wrap !important;
   }
+
   pre,
   blockquote {
     border: 1px solid #999;
     page-break-inside: avoid;
   }
+
   /*
      * Printing Tables:
      * https://web.archive.org/web/20180815150934/http://css-discuss.incutio.com/wiki/Printing_Tables
@@ -292,19 +313,21 @@ textarea {
   thead {
     display: table-header-group;
   }
+
   tr,
   img {
     page-break-inside: avoid;
   }
+
   p,
   h2,
   h3 {
     orphans: 3;
     widows: 3;
   }
+
   h2,
   h3 {
     page-break-after: avoid;
   }
 }
-
