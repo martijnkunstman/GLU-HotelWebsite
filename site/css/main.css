@@ -116,7 +116,7 @@ div {
   margin: 0 auto;
 }
 
-#header {
+header {
   background: blue;
   height: 117px;
   width: 100%;
@@ -150,6 +150,24 @@ div {
   background-color: #ff0000;
 }
 
+#filterFields {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: stretch;
+
+}
+
+.filterField {
+  display: inline-block;
+  padding:10px;
+}
+
+.filterField input{
+  width:80%;
+}
+
 
 
 /* Extra small devices (phones, 600px and down) */
@@ -158,6 +176,11 @@ div {
     font-size: 12px;
     background-color: #eeeeee;
   }
+  .filterField {
+    display: inline-block;
+    width:100%;
+  }
+
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -166,14 +189,27 @@ div {
     font-size: 14px;
     background-color: #dddddd;
   }
+  .filterField {
+    display: inline-block;
+    width:100%;
+  }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
+  
+  .s-100{
+    width:100%;
+  }
+  .s-50{
+    width:50%;
+  }
+  
   .nextELement {
     font-size: 16px;
-    background-color: #cccccc;
+    background-color: #cccccc;    
   }
+
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
@@ -182,6 +218,11 @@ div {
     font-size: 18px;
     background-color: #bbbbbb;
   }
+  .filterField {
+    display: inline-block;
+    width:20%;
+  }
+
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
@@ -190,6 +231,11 @@ div {
     font-size: 20px;
     background-color: #aaaaaa;
   }
+  .filterField {
+    display: inline-block;
+    width:20%;
+  }
+
 }
 
 
