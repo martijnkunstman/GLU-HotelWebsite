@@ -105,44 +105,91 @@ body {
 }
 
 div {
-  opacity: 0.5;
+  opacity: 1;
+  box-sizing: border-box;
+  border: 1px solid black;
 }
 
 #container {
-  background: red;
-  width: 1280px;
+  max-width: 1280px;
+  width: 100%;
   margin: 0 auto;
 }
 
 #header {
   background: blue;
   height: 117px;
-  width: 998px;
-  margin: 0 auto;
+  width: 100%;
 }
 
 #headerTop {
   background: yellow;
   height: 57px;
-  width: 998px;
-  margin: 0 auto;
+  width: 100%;
 }
 
 #headerBottom {
   background: #ff4400;
   height: 60px;
-  width: 998px;
-  margin: 0 auto;
+  width: 100%;
 }
 
 #startPhoto {
   background: #ffaaaa;
   height: 551px;
-  width: 1280px;
-  margin: 0 auto;
+  width: 100%;
   background-image: url("../img/background.png");
   background-size: cover;
   background-position: center;
+}
+
+.nextELement {
+  height: 551px;
+  width: 100%;
+  font-size: 24px;
+  background-color: #ff0000;
+}
+
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .nextELement {
+    font-size: 12px;
+    background-color: #eeeeee;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .nextELement {
+    font-size: 14px;
+    background-color: #dddddd;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .nextELement {
+    font-size: 16px;
+    background-color: #cccccc;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .nextELement {
+    font-size: 18px;
+    background-color: #bbbbbb;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .nextELement {
+    font-size: 20px;
+    background-color: #aaaaaa;
+  }
 }
 
 
