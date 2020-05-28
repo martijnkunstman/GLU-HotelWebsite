@@ -98,10 +98,14 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+
+   @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
 body {
   background-image: url("../img/travel_booking_design.jpg");
   background-position: top center;
   background-repeat: no-repeat;
+  font-family: 'Montserrat', sans-serif;
 }
 
 div {
@@ -141,6 +145,16 @@ header {
   background-image: url("../img/background.png");
   background-size: cover;
   background-position: center;
+}
+
+.searchFields{
+  background-color: #f0d839;
+}
+
+.searchFields h1{
+  text-transform: uppercase;
+  font-weight: bold;
+  text-align: center;
 }
 
 .nextELement {
